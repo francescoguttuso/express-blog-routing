@@ -13,3 +13,7 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   res.send("Creazione di un nuovo post");
 });
+
+router.post("/", (req, res) => {
+  res.send("Creazione di un nuovo post");
+});
