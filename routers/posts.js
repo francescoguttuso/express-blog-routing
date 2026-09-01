@@ -8,7 +8,8 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-  res.send(`Visualizzazione del post ${req.params.id}`);
+  const post = posts.find((post) => post.id === Number(req.params.id));
+  res.json(post);
 });
 
 router.post("/", (req, res) => {
