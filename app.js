@@ -1,5 +1,6 @@
 const express = require("express");
 const posts = require("./data/posts");
+const postsRouter = require("./routers/posts");
 const app = express();
 const port = 3000;
 
