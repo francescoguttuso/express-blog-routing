@@ -17,3 +17,7 @@ router.post("/", (req, res) => {
 router.put("/:id", (req, res) => {
   res.send(`Modifica del post ${req.params.id}`);
 });
+
+router.delete("/:id", (req, res) => {
+  res.send(`Cancellazione del post ${req.params.id}`);
+});
